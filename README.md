@@ -116,12 +116,11 @@ Save the results
 ```
 bn_actns = torch.cat(bn_actns)
 bn_actns = bn_actns.cpu().numpy()
-bn_actns.shape 
 pd.DataFrame(bn_actns).to_csv("lowdim_rna_prot_separated.csv")
 ```
 
-output
 ```
+bn_actns.shape 
 (7895, 64)
 ```
 
